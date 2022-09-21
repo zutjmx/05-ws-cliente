@@ -7,7 +7,10 @@ import './style.css'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1>Cliente de Websockets</h1>
-    <span>OffLine</span>
+    <span id="server-status">OffLine</span>
+
+    <ul id="clients-id"></ul>
+
   </div>
 `
 connectToServer();
